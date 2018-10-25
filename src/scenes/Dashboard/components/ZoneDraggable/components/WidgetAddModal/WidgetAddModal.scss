@@ -1,0 +1,25 @@
+.WidgetAddModal {
+    &-Row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: solid 1px #ccc;
+        transition: background .5s;
+        &:hover{
+            background: #f6f6f6;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &-Title {
+        margin-right: 10px;
+    }
+    &-Empty {
+        padding: 15px;
+    }
+    &.ui-dialog .ui-dialog-content {
+        padding: 0;
+    }
+}

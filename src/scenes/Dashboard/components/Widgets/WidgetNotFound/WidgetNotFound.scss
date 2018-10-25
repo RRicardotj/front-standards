@@ -1,0 +1,16 @@
+.WidgetNotFound {
+    border: dashed 2px rgb(175, 38, 38);
+    background: rgba(175, 38, 38, .3);
+    color: rgb(175, 38, 38);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    &-Code{
+        font-size: .7em;
+    }
+}

@@ -1,0 +1,118 @@
+@import '../../resources/styles/_mixins.scss';
+@import '../../resources/styles/_variables.scss';
+
+.Login {
+  background-color: $backgroundGeneralColor;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-Form {
+    width: 60%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      height: 75%;
+      width: 100%;
+    }
+
+    &-tabs {
+      width: 100%;
+
+      & .ui-tabview.ui-tabview-top>.ui-tabview-nav {
+        padding: .2em 1.2em 0 !important;
+      }
+
+      & .flat-tab {
+        border-bottom: none !important;
+
+        & ul {
+          display: flex;
+          justify-content: space-between;
+
+          &:before {
+            content: none !important;
+            display: none !important;
+          }
+
+          &:after {
+            content: none !important;
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    &-panel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+  }
+
+  &-Main {
+    display: flex;
+    min-height: 55%;
+    width: 60%;
+    background-color: #0a1424;
+    @include box-shadow(0px 0px 34px -4px rgba(0, 0, 0, 0.75));
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-Pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background: url('./images/bk.png');
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 25%;
+    }
+
+    &-Logo {
+      display: flex;
+      flex-direction: column;
+      min-width: 0px;
+
+      & img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 1px 1px #e0e0df;
+      }
+    }
+
+    &-Text {
+      margin-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      color: white;
+    }
+
+    &-Sub-Text {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: white;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,26 @@
+@import 'resources/styles/_variables.scss';
+
+.LoginForm {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    &-Elements-forgot-link {
+        font-size: 0.8em;
+        text-align: right;
+        text-decoration: underline;
+        cursor: pointer;
+        color: $primaryColor;
+    }
+    &-Elements-Input {
+        margin-bottom: 25px;
+    }
+    &-Elements-Login {
+        width: 100%;
+    }
+}
+
+
+

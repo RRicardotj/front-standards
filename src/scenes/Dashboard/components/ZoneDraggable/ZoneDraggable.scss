@@ -1,0 +1,36 @@
+.ZoneDraggable {
+    padding: 2px 5px 1px 5px;
+    border: solid 3px transparent;
+    position: relative;
+    min-height: 80px;
+    // &.edit {
+    //   border: dashed 3px coral;
+    // }
+
+    .edit & {
+      outline: dashed 1px coral;
+    }
+
+    &.horizontal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2px 0 ;
+        & .Widget{
+            width: 200px;
+            min-width: 20%;
+            margin: 0 5px;
+        }
+    }
+    & .Widget{
+        margin-bottom: 10px;
+    }
+
+    &-Add{
+        position: absolute;
+        background: springgreen;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 50%;
+    }
+}

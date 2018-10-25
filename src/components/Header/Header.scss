@@ -1,0 +1,64 @@
+.Header {
+    display: flex;
+    background: #1890ff !important;
+
+    &-siderButton {
+        &-collapsed {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        &-noCollapsed {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        & button {
+            height: 100% !important;
+            min-width: 70px !important;
+            border: none !important;
+            border-radius: 0px !important;
+
+            & .Icon {
+                height: initial !important;
+                width: initial !important;
+                -webkit-transition: .1s ease-in-out;
+                -moz-transition: .1s ease-in-out;
+                -o-transition: .1s ease-in-out;
+                transition: .1s ease-in-out;
+            }
+        }
+    }
+
+    &-title {
+        display: flex;
+        flex: 1 1 auto;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        background: white;
+        color: #1890ff;
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    &-action {
+        display: flex;
+
+        & button {
+            height: 100% !important;
+            min-width: 70px !important;
+            border: none !important;
+            border-radius: 0px !important;
+
+            & .Icon {
+                height: initial !important;
+                width: initial !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.Main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-first-item {
+        background-color: #1890ff !important;
+        margin-top: 0 !important;
+        height: 64px !important;
+        display: flex !important;
+        justify-content: center;
+    }
+
+    &-usermenu {
+        &-menu {
+            display: flex !important;
+            align-items: center;
+            line-height: 0px !important;
+
+            & .Icon {
+                height: initial !important;
+                width: initial !important;
+                padding-right: 10px;
+            }
+        }
+
+    }
+
+    &-userinfo {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1 1 auto;
+
+        &-text {
+            line-height: initial !important;
+        }
+
+        &-usericon {
+            display: flex;
+            height: initial !important;
+        }
+
+        &-logout {
+            display: flex;
+            height: initial !important;
+
+            &.ant-btn-primary {
+                color: #fff;
+                background-color: transparent !important;
+                border-color: transparent !important;
+                padding: 0px !important;
+            }
+
+            &-icon {
+                display: flex;
+                height: initial !important;
+            }
+        }
+    }
+}
+
+.ant-popover-inner-content {
+    padding: 0px !important;
+}

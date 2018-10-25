@@ -1,0 +1,16 @@
+.SimpleList {
+    background: white;
+    &-item {
+        padding: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background: #eeeeee;
+        }
+
+        &.active {
+            background: #00b8ff;
+            color: white;
+        }
+    }
+}

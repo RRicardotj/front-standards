@@ -1,0 +1,114 @@
+@import "./variables";
+@import "./_forms.scss";
+
+/* App global styles */
+
+.primaryFontColor {
+    color: $primaryColor
+}
+
+.primaryFontColorLighten {
+    color: $lightenPrimaryColor
+}
+
+.app-error-span {
+    color: #eb1010;
+    display: block;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+hr {
+    margin: -1px 0px 0px;
+    height: 1px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+
+a {
+    text-decoration: none;
+}
+
+.Loader-Wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 400px;
+    width: 100%;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+.no-button-right-margin {
+    margin-right: 0px !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.Empty-Space {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+
+// Fix to use Custom Icons on Ant NavBar
+.ant-menu-item {
+    & a {
+        display: flex !important;
+        align-items: center;
+    }
+}
+
+.ant-menu-item-selected {
+    background-color: #00b8ff !important;
+}
+
+.ant-menu-submenu-title {
+    & span {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.ant-layout-sider {
+    min-width: fit-content !important;
+}
+
+.ant-layout-sider-zero-width-trigger {
+    z-index: 1;
+}
+
+/* Fix to sider */
+.ant-layout-sider {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ant-layout-sider-collapsed {
+    overflow: initial;
+}
+
+// Hide the original button of collapse sider
+.ant-layout-sider-zero-width-trigger {
+    display: none !important;
+}

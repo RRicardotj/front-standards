@@ -1,0 +1,21 @@
+@import '../../resources/styles/_variables';
+
+.Empty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  color: darken($backgroundGeneralColor, 20);
+  &-icon{
+    //color: #fff;
+  }
+  &-text{
+    width: 80%;
+    text-align: center;
+  }
+  &-title{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
